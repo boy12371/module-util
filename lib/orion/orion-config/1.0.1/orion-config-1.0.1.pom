@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>orion-parent</artifactId>
+		<groupId>com.huifu.orion</groupId>
+		<version>1.0.1</version>
+	</parent>
+
+	<artifactId>orion-config</artifactId>
+	<name>orion-config</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.huifu.orion</groupId>
+			<artifactId>orion-util</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

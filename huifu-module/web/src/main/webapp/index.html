@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Post 工具</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+	function postData() {
+		if($("#url").val() == null || $("#url").val() == "") {
+			alert("url 不能为空！");
+			return;
+		}
+		$( "#results" ).val('');
+		$.ajax({  
+            type: "POST",  
+            url : $("#url").val(),  
+            data:  $("#jsonData").val(),  
+            
+            contentType: "application/json",  
+        }).done(function( result ) {
+            $( "#results" ).val( JSON.stringify(result) );
+        });  
+	}
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>URL</td>
+			<td> <input name="url" id="url" type="text" style="width:600px;" value="http://localhost:9090/module/1010101" ></td>
+		</tr>
+		<tr>
+			<td>请求json 数据</td>
+			<td> <textarea name="url" id="jsonData" cols="80" rows="15" >{}</textarea>
+		</tr>
+		<tr>
+			<td>返回json 数据</td>
+			<td> <textarea name="url" id="results" cols="80" rows="15" ></textarea>
+		</tr>
+		<tr>
+			<td clospan="2">
+				<input name="button" onclick="javascript:postData();" value="提交" type="button" >
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

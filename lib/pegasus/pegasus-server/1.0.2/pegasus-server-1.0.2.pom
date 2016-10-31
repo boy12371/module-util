@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>pegasus-parent</artifactId>
+		<groupId>com.huifu.pegasus</groupId>
+		<version>1.0.2</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pegasus-server</artifactId>
+	<name>pegasus-server</name>
+
+	<distributionManagement>
+		<site>
+			<id>site</id>
+			<url>file://${project.basedir}/../target/site/${project.artifactId}</url>
+		</site>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.huifu.pegasus</groupId>
+			<artifactId>pegasus-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-extension</artifactId>
+			<version>1.1.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.huifu.openrework.jackson</groupId>
+			<artifactId>jackson-databind-rework</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

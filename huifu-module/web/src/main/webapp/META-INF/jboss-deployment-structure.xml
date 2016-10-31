@@ -1,0 +1,13 @@
+<!DOCTYPE xml>
+<jboss-deployment-structure>
+	<deployment>
+		<!-- Exclusions allow you to prevent the server from automatically adding 
+			some dependencies -->
+		<exclusions>
+			<module name="org.apache.log4j" />
+			<module name="org.slf4j" />
+			<module name="org.slf4j.impl" />
+			<module name="org.apache.cxf" />
+		</exclusions>
+	</deployment>
+</jboss-deployment-structure>

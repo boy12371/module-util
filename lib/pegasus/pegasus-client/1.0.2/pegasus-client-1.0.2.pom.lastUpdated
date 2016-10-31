@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Oct 16 11:24:14 CST 2016
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://192.168.0.77\:7878/nexus/content/groups/public/.error=Could not transfer artifact com.huifu.pegasus\:pegasus-client\:pom\:1.0.2 from/to huifu-nexus-repo (http\://192.168.0.77\:7878/nexus/content/groups/public)\: The operation was cancelled.
+@default-huifu-nexus-repo-http\://192.168.0.77\:7878/nexus/content/groups/public/.lastUpdated=1475857306967
+@default-alimaven-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1475857306975
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1476588254473
